@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+      --white: #fff;
+      --dark1: #3a415a;
+      --dark2: #89a7b1;
+      --dark3: #cbdad5;
+      --blue1: #4682B4;
+      --blue2: #4169E1;
+      --blue3: #191970;
+      --cyan1: #70e3ea;
+      --cyan2: #E0FFFF;
+      --red1:  #FF0000;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: var(--blue1);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--cyan1);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--cyan2);
+    }
+
+    body{
+       background-color: var(--blue2);
+       height: 100vh;
+       font-family: 'Lato';
+    }
+    
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap ;
+        padding: .8rem;
+        background-color: var(--blue1);
+        min-height: 50px;
+    }
+
+    .box-img-header{
+        height: 100%;
+
+    }
+
+    .img-logo{
+        max-width: 60px;
+        height: 100%;
+    }
+
+    nav{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-links{
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    .nav-links:hover{
+       color: var(--blue3); 
+       transition: .4s;
+       text-decoration: underline;
+    }
+
+    .box-button-header{
+        display: flex;
+        gap: 1rem;
+
+    }
+
+    :is(button, .link-action){
+        padding: .6rem;
+        font-size: .9rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: .4s;
+    }
+
+    .button-action{
+        background-color: transparent;
+        border: 1px solid var(--white);
+        color: var(--white);
+    }
+
+    .button-action:hover{
+        background-color: var(--blue3);
+        border: 1px solid var(--blue3);
+    }
+
+    .link-action{
+        text-decoration: none;
+        width: 200px;
+        text-align: center;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    section{
+        padding: 4rem;
+    }
+
+    .first-section{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2rem;
+        flex-wrap: wrap;
+        align-items: center;
+        min-height: 650px;
+    }
+
+    .first-section > div{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        min-width: 300px;
+    }
+
+    h1{
+        font-size: 4rem;
+        color: var(--white);
+        letter-spacing: 8px;
+    }
+
+    strong{
+        color: var(--red1);
+    }
+
+    .first-section p{
+        color: var(--white);
+    }
+
+    .img-perfil{
+        max-width: 450px;
+        padding: 1rem;
+    }
+
+    .perfil{
+        border-radius: 30%;
+        width: 100%;
+    }
+
+    .title{
+        color: var(--dark3);
+    }
+
+    .second-section{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: var(--dark2);
+    }
+
+    .second-section > div{
+        display: flex;
+        gap: 4rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .second-section > div img{
+        width: 250px;
+        border-radius: 10px;
+    }
+
+    .second-section > div p{
+        max-width: 600px;
+        color: var(--white);
+        text-align: justify;
+    }
+
+    .third-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    footer{
+        padding: 4rem;
+        background-color: var(--dark2);
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    footer > div{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        word-break: break-word;
+    }
+
+    #meusprojetos{
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #meusprojetos a{
+        text-decoration: none;
+        color: var(--blue3);
+    }
+
+    #meusprojetos a:hover{
+        color: var(--dark3);
+        transition: .4s;
+        cursor: pointer;
+    }
+
+    .perfil{
+        box-shadow: 1px 1px 1px 1px var(--cyan2);
+    }
+
+    .foto{
+        box-shadow: 1px 1px 1px 1px var(--dark1);
+    }
